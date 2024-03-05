@@ -6,7 +6,9 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "prepare": "husky install",
+    "postinstall": "npx husky install"
   },
   "dependencies": {
     "expo": "~50.0.8",
@@ -26,6 +28,7 @@
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-prettier": "^5.1.3",
     "eslint-plugin-react": "^7.34.0",
+    "husky": "^8.0.0",
     "prettier": "^3.2.5",
     "typescript": "^5.1.3"
   },
