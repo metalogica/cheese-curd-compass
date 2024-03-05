@@ -1,0 +1,40 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {},
+  "overrides": [
+    {
+      "files": ["**/*.ts", "**/*.tsx"],
+      "rules": {
+        "react/prop-types": "off",
+	    "react/react-in-jsx-scope": "off",
+	    "no-multiple-empty-lines": "error",
+	    "semi-style": ["error", "last"],
+	    "quotes": [2, "single", { "avoidEscape": true }],
+	    "id-length": [ 2, { "exceptions": ["i", "j"], "properties": "never" }]
+      }
+    }
+  ]
+}
